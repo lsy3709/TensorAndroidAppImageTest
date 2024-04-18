@@ -78,12 +78,14 @@
             android:src="@drawable/img_meal_three" />
     </LinearLayout>
 
+
     <LinearLayout
-      android:layout_width="match_parent"
-      android:layout_height="100dp"
-      android:orientation="horizontal"
       android:id="@+id/btnGroup"
-      >
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/captureImageFab"
+      android:gravity="center_horizontal"
+      android:orientation="horizontal">
 
     </LinearLayout>
     <Button
@@ -93,7 +95,11 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="false"
         android:layout_gravity="left|bottom"
-        android:layout_margin="16dp"
+
+      android:layout_marginLeft="40dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginRight="16dp"
+      android:layout_marginBottom="16dp"
         android:drawableLeft="@drawable/ic_camera"
         android:text="@string/tv_take_photo"
         android:textAllCaps="false" />
@@ -102,7 +108,7 @@
       android:layout_width="150dp"
       android:layout_height="wrap_content"
       android:layout_alignParentBottom="true"
-      android:layout_centerHorizontal="true"
+      android:layout_centerHorizontal="false"
       android:layout_gravity="left|bottom"
       android:layout_margin="16dp"
       android:drawableLeft="@drawable/ic_camera"
